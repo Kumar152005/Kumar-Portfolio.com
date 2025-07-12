@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html 1lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Kumar Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="components" href="components/app.jsx">
+  <link rel="components" href="components/NavBar.jsx">
+  <link rel="components" href="components/Experience.jsx">
+  <link rel="components" href="components/Contact.jsx">
+  <link rel="components" href="components/Projects.jsx">
+  <link rel="components" href="components/Skills.jsx">
+  <link rel="components" href="components/About.jsx"> 
+  <link rel="components" href="components/Hero.jsx">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="hero">
+    <h1 id="hero-title"></h1>
+    <h2 id="hero-subtitle">Web Developer & Designer</h2>
+    <svg id="hero-svg" width="220" height="44">
+      <path d="M10 40 Q110 10 210 40" stroke="#5de4c7" stroke-width="4" fill="transparent"/>
+    </svg>
+  </section>
+  <section id="about">
+    <div class="parallax-bg"></div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Kumar Harsh, a passionate student exploring the intersection of technology and creativity.<br><br>
+        My journey has been a blend of academics and hands-on projects, from building web apps to designing digital art. I love to solve problems, learn new things, and bring ideas to life through code and design.
+      </p>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress-bar"><div class="bar" data-level="90"></div></div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="progress-bar"><div class="bar" data-level="50"></div></div>
+      </div>
+      <div class="skill">
+        <span>HTML/CSS</span>
+        <div class="progress-bar"><div class="bar" data-level="95"></div></div>
+      </div>
+      <div class="skill">
+        <span>c++</span>
+        <div class="progress-bar"><div class="bar" data-level="70"></div></div>
+      </div>
+      <div class="skill">
+        <span>Java</span>
+        <div class="progress-bar"><div class="bar" data-level="70"></div></div>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress-bar"><div class="bar" data-level="50"></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" tabindex="0">
+        <div class="card-front">
+          <h3>Responsive Landing Page</h3>
+          <span><tm1-ui-dbr-image
+             tm1-instance="Instance Name"
+             tm1-cube="Cube Name"
+             tm1-elements='Comma separated element list'
+             ng-model="model"
+             >
+          </tm1-ui-dbr-image></span>
+        </div>
+        <div class="card-back">
+          <h3>Responsive Landing Page</h3>
+          <p>A visually appealing landing page that adapts to different screen sizes. Built with HTML, CSS, and JavaScript.</p>
+          <a href="https://github.com/yourusername/studybuddy" target="_blank"></a>
+        </div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <div class="card-front">
+          <h3>Artfolio</h3>
+          <span></span>
+        </div>
+        <div class="card-back">
+          <h3>Artfolio</h3>
+          <p>Personal online gallery for digital art, featuring responsive layouts and smooth image transitions. Made with React and Framer Motion.</p>
+          <a href="https://github.com/yourusername/artfolio" target="_blank"></a>
+        </div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <div class="card-front">
+          <h3>Weather App</h3>
+          <span><tm1-ui-dbr-image
+             tm1-instance="Instance Name"
+             tm1-cube="Cube Name"
+             tm1-elements='Comma separated element list'
+             ng-model="model"
+             >
+          </tm1-ui-dbr-image></span>
+        </div>
+        <div class="card-back">
+          <h3>Weather App</h3>
+          <p>A web application that provides real-time weather updates and forecasts. Built with React and OpenWeatherMap API.</p>
+          <a href="https://github.com/yourusername/weather-app" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="accent"></span>
+        <div><strong>Web Dev Intern</strong> <span>@ EduTech Labs</span></div>
+        <div class="date">Oct–Dec 2024</div>
+        <div>Built an internal dashboard and enhanced user onboarding flow.</div>
+      </div>
+      <div class="timeline-item">
+        <span class="accent"></span>
+        <div><strong>Web Dev</strong> <span>@ Infynas Learning Solution</span></div>
+        <div class="date">Jly-Aug 2025</div>
+        <div>Led a student team to design digital campaign graphics and event branding.</div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- <form id="contact-form" autocomplete="off">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+      <div class="success-message" style="display:none;">Thanks for reaching out!</div>
+    </form> -->
+    <p>
+      <li>If you'd like to get in touch, feel free to connect with me on <a href="https://www.linkedin.com/in/kumar-harsh-b32912369" target="_blank">https://www.linkedin.com/in/kumar-harsh-b32912369</a>.</li>
+      <li>If you prefer, you can also send me an email at <a href="mailto:kumarharsh152005@gmail.com">kumarharsh152005@gmail.com</a>.</li>
+      <li> Or you can visit my Insta ID <a href="https://www.instagram.com/kumarharsh__15/" target="_blank">kumarharsh__15</a>.</li>
+      </p>
+  </section>
+  <footer>
+        <p>&copy; 2025 Kumar Harsh. All rights reserved.</p>
+    </footer> 
+  <script src="script.js"></script>
+</body>
+</html>
