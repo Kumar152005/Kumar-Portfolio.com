@@ -46,12 +46,16 @@ const setActiveLink = () => {
 window.addEventListener("scroll", setActiveLink, { passive: true });
 setActiveLink();
 
-window.addEventListener("mousemove", (event) => {
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
-});
+const supportsFinePointer = window.matchMedia("(pointer: fine)").matches;
 
-if (tiltCard) {
+if (supportsFinePointer && cursorGlow) {
+  window.addEventListener("mousemove", (event) => {
+    cursorGlow.style.left = `${event.clientX}px`;
+    cursorGlow.style.top = `${event.clientY}px`;
+  });
+}
+
+if (supportsFinePointer && tiltCard) {
   const portrait = tiltCard.querySelector(".portrait-card");
 
   tiltCard.addEventListener("mousemove", (event) => {

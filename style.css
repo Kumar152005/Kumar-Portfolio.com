@@ -263,6 +263,7 @@ h1 span {
   background: var(--panel);
   box-shadow: var(--shadow);
   transform-style: preserve-3d;
+  will-change: transform;
   animation: floatPortrait 5.8s ease-in-out infinite;
 }
 
@@ -311,6 +312,7 @@ h1 span {
   object-position: 50% 28%;
   transform: scale(1.03);
   filter: saturate(1.06) contrast(1.02);
+  will-change: transform;
   animation: avatarBreath 6s ease-in-out infinite;
 }
 
@@ -676,6 +678,23 @@ footer {
 }
 
 @media (max-width: 900px) {
+  body {
+    background: linear-gradient(180deg, #07100d 0%, #0a1114 48%, #07100d 100%);
+  }
+
+  .cursor-glow,
+  .orbit,
+  .avatar-pulse,
+  .scan-line {
+    display: none;
+  }
+
+  .site-header,
+  .floating-badge,
+  .avatar-status {
+    backdrop-filter: none;
+  }
+
   .site-nav {
     position: fixed;
     inset: 82px 16px auto;
@@ -706,9 +725,24 @@ footer {
   }
 
   .portrait-stage {
-    min-height: 520px;
+    min-height: 470px;
     order: -1;
     margin-top: 22px;
+  }
+
+  .portrait-card {
+    width: min(360px, 84vw);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.26);
+    animation: floatPortrait 7.5s ease-in-out infinite;
+  }
+
+  .avatar-card {
+    animation: floatPortrait 7.5s ease-in-out infinite;
+  }
+
+  .portrait-card img {
+    animation: none;
+    transform: scale(1.02);
   }
 
   .orbit-one {
@@ -753,7 +787,7 @@ footer {
   }
 
   .portrait-stage {
-    min-height: 440px;
+    min-height: 390px;
   }
 
   .floating-badge {
