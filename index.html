@@ -1,163 +1,185 @@
 <!DOCTYPE html>
-<html 1lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Kumar Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="components" href="components/app.jsx">
-  <link rel="components" href="components/NavBar.jsx">
-  <link rel="components" href="components/Experience.jsx">
-  <link rel="components" href="components/Contact.jsx">
-  <link rel="components" href="components/Projects.jsx">
-  <link rel="components" href="components/Skills.jsx">
-  <link rel="components" href="components/About.jsx"> 
-  <link rel="components" href="components/Hero.jsx">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumar Harsh | Portfolio</title>
+  <meta name="description" content="Portfolio of Kumar Harsh, a student web developer building clean web apps and practical software projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <section id="hero">
-    <h1 id="hero-title"></h1>
-    <h2 id="hero-subtitle">Web Developer & Designer</h2>
-    <svg id="hero-svg" width="220" height="44">
-      <path d="M10 40 Q110 10 210 40" stroke="#5de4c7" stroke-width="4" fill="transparent"/>
-    </svg>
-  </section>
-  <section id="about">
-    <div class="parallax-bg"></div>
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Kumar Harsh, a passionate student exploring the intersection of technology and creativity.<br><br>
-        My journey has been a blend of academics and hands-on projects, from building web apps to designing digital art. I love to solve problems, learn new things, and bring ideas to life through code and design.
-      </p>
-    </div>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress-bar"><div class="bar" data-level="90"></div></div>
-      </div>
-      <div class="skill">
-        <span>React</span>
-        <div class="progress-bar"><div class="bar" data-level="50"></div></div>
-      </div>
-      <div class="skill">
-        <span>HTML/CSS</span>
-        <div class="progress-bar"><div class="bar" data-level="95"></div></div>
-      </div>
-      <div class="skill">
-        <span>c++</span>
-        <div class="progress-bar"><div class="bar" data-level="70"></div></div>
-      </div>
-      <div class="skill">
-        <span>Java</span>
-        <div class="progress-bar"><div class="bar" data-level="70"></div></div>
-      </div>
-      <div class="skill">
-        <span>Python</span>
-        <div class="progress-bar"><div class="bar" data-level="50"></div></div>
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card" tabindex="0">
-        <div class="card-front">
-          <h3>Responsive Landing Page</h3>
-          <span><tm1-ui-dbr-image
-             tm1-instance="Instance Name"
-             tm1-cube="Cube Name"
-             tm1-elements='Comma separated element list'
-             ng-model="model"
-             >
-          </tm1-ui-dbr-image></span>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Kumar Harsh home">
+      <span>KH</span>
+      <strong>Kumar Harsh</strong>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Student Developer / Web Builder</p>
+        <h1>Hi, I am <span>Kumar Harsh</span>.</h1>
+        <p class="hero-text">
+          I build responsive websites, interactive JavaScript projects, and practical tools while sharpening my full-stack skills.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
         </div>
-        <div class="card-back">
-          <h3>Responsive Landing Page</h3>
-          <p>A visually appealing landing page that adapts to different screen sizes. Built with HTML, CSS, and JavaScript.</p>
-          <a href="https://github.com/yourusername/studybuddy" target="_blank"></a>
+        <div class="hero-stats" aria-label="Portfolio highlights">
+          <div><strong>5+</strong><span>Projects</span></div>
+          <div><strong>7</strong><span>Core Skills</span></div>
+          <div><strong>2026</strong><span>Growing Fast</span></div>
         </div>
       </div>
-      <div class="project-card" tabindex="0">
-        <div class="card-front">
-          <h3>Artfolio</h3>
+
+      <div class="portrait-stage reveal" data-tilt-card>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="avatar-pulse"></div>
+        <div class="portrait-card avatar-card">
+          <img src="assets/kumar-harsh-portrait.jpeg" alt="Animated avatar portrait of Kumar Harsh">
+          <div class="scan-line"></div>
+          <div class="avatar-status"><span></span> Building now</div>
+        </div>
+        <div class="floating-badge badge-code">Web Avatar</div>
+        <div class="floating-badge badge-learn">Java + React</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>A practical learner who likes turning ideas into working interfaces.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="reveal">
+          I am Kumar Harsh, a technology student focused on web development, programming fundamentals, and clean user experiences.
+          I enjoy building small but useful projects because each one teaches me something real about design, logic, and problem solving.
+        </p>
+        <p class="reveal">
+          My current focus is becoming stronger in JavaScript, React, backend basics, and deployment so I can build complete applications from idea to launch.
+        </p>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use to build, debug, and improve.</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><span>01</span><h3>HTML</h3><p>Semantic layouts and accessible structure.</p></article>
+        <article class="skill-card reveal"><span>02</span><h3>CSS</h3><p>Responsive design, animation, and visual polish.</p></article>
+        <article class="skill-card reveal"><span>03</span><h3>JavaScript</h3><p>Interactive UI logic and browser behavior.</p></article>
+        <article class="skill-card reveal"><span>04</span><h3>React</h3><p>Component-based interfaces and modern app flow.</p></article>
+        <article class="skill-card reveal"><span>05</span><h3>Java</h3><p>Object-oriented programming, logic building, and backend fundamentals.</p></article>
+        <article class="skill-card reveal"><span>06</span><h3>C++</h3><p>Programming fundamentals, problem solving, and performance thinking.</p></article>
+        <article class="skill-card reveal"><span>07</span><h3>Python</h3><p>Scripting, logic practice, and automation basics.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work from my GitHub direction.</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <div>
+            <h3>Kumar Portfolio</h3>
+            <p>A personal portfolio focused on responsive layout, motion, and project storytelling.</p>
+          </div>
+          <span>HTML / CSS / JS</span>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <div>
+            <h3>Koventa</h3>
+            <p>A real-time chat app focused on instant messaging, authentication, and smooth full-stack communication flow.</p>
+          </div>
+          <span>Real-Time Chat</span>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">03</div>
+          <div>
+            <h3>Kumar Calculator</h3>
+            <p>A clean calculator interface that practices JavaScript logic and UI state handling.</p>
+          </div>
+          <span>JavaScript</span>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">04</div>
+          <div>
+            <h3>AI Resume Builder</h3>
+            <p>A resume builder concept focused on form flow, document generation, and helpful UX.</p>
+          </div>
+          <span>Web App</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Learning path and growth.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
           <span></span>
+          <h3>Web Development Practice</h3>
+          <p>Building responsive pages, UI components, and JavaScript interactions through personal projects.</p>
         </div>
-        <div class="card-back">
-          <h3>Artfolio</h3>
-          <p>Personal online gallery for digital art, featuring responsive layouts and smooth image transitions. Made with React and Framer Motion.</p>
-          <a href="https://github.com/yourusername/artfolio" target="_blank"></a>
+        <div class="timeline-item reveal">
+          <span></span>
+          <h3>Programming Fundamentals</h3>
+          <p>Practicing logic, data structures, and language basics with Java, C++, Python, and JavaScript.</p>
         </div>
-      </div>
-      <div class="project-card" tabindex="0">
-        <div class="card-front">
-          <h3>Weather App</h3>
-          <span><tm1-ui-dbr-image
-             tm1-instance="Instance Name"
-             tm1-cube="Cube Name"
-             tm1-elements='Comma separated element list'
-             ng-model="model"
-             >
-          </tm1-ui-dbr-image></span>
-        </div>
-        <div class="card-back">
-          <h3>Weather App</h3>
-          <p>A web application that provides real-time weather updates and forecasts. Built with React and OpenWeatherMap API.</p>
-          <a href="https://github.com/yourusername/weather-app" target="_blank"></a>
+        <div class="timeline-item reveal">
+          <span></span>
+          <h3>Next Focus</h3>
+          <p>Improving React, backend integration, GitHub project quality, and deployment workflow.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="accent"></span>
-        <div><strong>Web Dev Intern</strong> <span>@ EduTech Labs</span></div>
-        <div class="date">Oct–Dec 2024</div>
-        <div>Built an internal dashboard and enhanced user onboarding flow.</div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something useful.</h2>
+        <p>Open to learning, collaboration, and web development opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:kumarharsh152005@gmail.com">Email</a>
+          <a href="https://github.com/Kumar152005" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/kumar-harsh-b32912369" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/kumarharsh__15/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
       </div>
-      <div class="timeline-item">
-        <span class="accent"></span>
-        <div><strong>Web Dev</strong> <span>@ Infynas Learning Solution</span></div>
-        <div class="date">Jly-Aug 2025</div>
-        <div>Led a student team to design digital campaign graphics and event branding.</div>
-      </div>
-    </div>
-  </section>
-  <section id="contact">
-    <h2>Contact</h2>
-    <!-- <form id="contact-form" autocomplete="off">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-      <div class="success-message" style="display:none;">Thanks for reaching out!</div>
-    </form> -->
-    <p>
-      <li>If you'd like to get in touch, feel free to connect with me on <a href="https://www.linkedin.com/in/kumar-harsh-b32912369" target="_blank">https://www.linkedin.com/in/kumar-harsh-b32912369</a>.</li>
-      <li>If you prefer, you can also send me an email at <a href="mailto:kumarharsh152005@gmail.com">kumarharsh152005@gmail.com</a>.</li>
-      <li> Or you can visit my Insta ID <a href="https://www.instagram.com/kumarharsh__15/" target="_blank">kumarharsh__15</a>.</li>
-      </p>
-  </section>
+    </section>
+  </main>
+
   <footer>
-        <p>&copy; 2025 Kumar Harsh. All rights reserved.</p>
-    </footer> 
+    <p>© 2026 Kumar Harsh. Designed with motion, focus, and a little ambition.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
